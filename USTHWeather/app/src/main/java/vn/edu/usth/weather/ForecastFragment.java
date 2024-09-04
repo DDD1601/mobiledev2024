@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.graphics.Color;
 
 import androidx.fragment.app.Fragment;
 
@@ -24,32 +25,32 @@ public class ForecastFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-
+        // Inflate the layout for this fragment
         LinearLayout layout = new LinearLayout(getActivity());
         layout.setOrientation(LinearLayout.VERTICAL);
-        layout.setLayoutParams(new LinearLayout.LayoutParams(
-                LinearLayout.LayoutParams.MATCH_PARENT,
-                LinearLayout.LayoutParams.WRAP_CONTENT));
+        layout.setPadding(16, 16, 16, 16);
+        layout.setBackgroundColor(Color.parseColor("#e0f7fa")); // Light blue color
 
+        // Example of adding TextView and ImageView dynamically
+        String[] days = {"Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"};
+        int[] icons = {R.drawable.sun, R.drawable.rainy, R.drawable.cloudy}; // Replace with actual icon names
 
-        TextView textView = new TextView(getActivity());
-        textView.setText("Thursday");
-        textView.setLayoutParams(new LinearLayout.LayoutParams(
-                LinearLayout.LayoutParams.WRAP_CONTENT,
-                LinearLayout.LayoutParams.WRAP_CONTENT));
+        for (int i = 0; i < days.length; i++) {
+            TextView dayView = new TextView(getActivity());
+            dayView.setText(days[i]);
+            dayView.setTextSize(16);
+            dayView.setTextColor(Color.BLACK);
 
+            ImageView weatherIcon = new ImageView(getActivity());
+            weatherIcon.setImageResource(icons[i % icons.length]); // Use icons cyclically for demo
 
-        ImageView imageView = new ImageView(getActivity());
-        imageView.setLayoutParams(new LinearLayout.LayoutParams(
-                LinearLayout.LayoutParams.WRAP_CONTENT,
-                LinearLayout.LayoutParams.WRAP_CONTENT));
-        imageView.setImageResource(R.drawable.sun);
-
-
-        layout.addView(textView);
-        layout.addView(imageView);
-
+            // Add TextView and ImageView to the layout
+            layout.addView(dayView);
+            layout.addView(weatherIcon);
+        }
 
         return layout;
     }
+
 }
+
