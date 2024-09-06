@@ -19,6 +19,8 @@ public class WeatherActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_weather);
+
+        // Apply window insets for immersive experience
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
@@ -27,6 +29,7 @@ public class WeatherActivity extends AppCompatActivity {
 
         Log.i(TAG, "onCreate called");
 
+        // Adding ForecastFragment dynamically
         if (savedInstanceState == null) {
             FragmentManager fragmentManager = getSupportFragmentManager();
             FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
@@ -37,6 +40,7 @@ public class WeatherActivity extends AppCompatActivity {
         }
     }
 
+    // Lifecycle logging methods
     @Override
     protected void onStart() {
         super.onStart();
@@ -67,3 +71,4 @@ public class WeatherActivity extends AppCompatActivity {
         Log.i(TAG, "onDestroy called");
     }
 }
+

@@ -257,7 +257,5 @@
             android:layout_gravity="center_vertical" />
     </LinearLayout>
 
-    <!-- Repeat the above LinearLayout for each day -->
-    <!-- You can replace the text and image source accordingly -->
 
 </LinearLayout>

@@ -1,0 +1,27 @@
+import matplotlib.pyplot as plt
+import pandas as pd
+
+# Update this to your local file path
+file_path = "C:/Users/Duong's Laptop/Downloads/Data_Exercise2.xlsx"
+data = pd.read_excel(file_path)
+
+# Extracting data from the Excel file
+salary = data['Salary']
+experience = data['Experience']
+status = data['Status']
+
+# Filtering data based on status
+loan = data[status == 'loan']
+refuse = data[status == 'refuse']
+
+# Scatter plot
+plt.scatter(loan['Salary'], loan['Experience'], color='red', label='loan')
+plt.scatter(refuse['Salary'], refuse['Experience'], color='blue', label='refuse')
+
+# Adding titles and labels
+plt.xlabel('Salary (million)')
+plt.ylabel('Experience (years)')
+plt.legend()
+
+# Display the plot
+plt.show()
