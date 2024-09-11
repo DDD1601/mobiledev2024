@@ -17,16 +17,16 @@ public class WeatherFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
+
         View view = inflater.inflate(R.layout.fragment_weather, container, false);
 
-        // Initialize UI components
+
         temperatureTextView = view.findViewById(R.id.text_temperature);
         descriptionTextView = view.findViewById(R.id.text_weather_description);
         weatherIconImageView = view.findViewById(R.id.image_weather_icon);
 
-        // You can set default values or update them dynamically based on data
-        updateWeatherUI("12C", "Cloudy", R.drawable.cloudy); // Update these values as per your need
+
+        updateWeatherUI("12C", "Cloudy", R.drawable.cloudy);
 
         return view;
     }
