@@ -12,15 +12,23 @@
         android:background="#FFD6F2D5"
         tools:ignore="UselessParent">
 
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/frame"
+            android:scaleType="fitXY" />
+
         <TextView
             android:id="@+id/status"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="5dp"
+            android:layout_height="84dp"
             android:layout_alignParentStart="true"
+            android:layout_marginStart="2dp"
+            android:padding="5dp"
+            android:text="@string/_12c_ncloudy"
             android:textColor="#FF000000"
-            android:textSize="20sp"
-            android:text="@string/_12c_ncloudy" >
+            android:textSize="20sp">
+
         </TextView>
 
         <ImageView
@@ -40,13 +48,16 @@
             android:id="@+id/location"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="5dp"
-
             android:layout_alignParentEnd="true"
 
+            android:layout_marginEnd="50dp"
+
+            android:padding="5dp"
+            android:text="Paris"
             android:textColor="#FF000000"
-            android:textSize="18sp"
-            android:text="Paris" />
+            android:textSize="18sp" />
 
     </RelativeLayout>
 </FrameLayout>
+
+
