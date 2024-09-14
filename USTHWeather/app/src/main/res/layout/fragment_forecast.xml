@@ -43,7 +43,7 @@
 
                 android:textSize="20sp"
 
-                android:text="Mon" />
+                android:text="@string/mon" />
 
             <TextView
                 android:id="@+id/line_2_day"
@@ -62,7 +62,7 @@
 
                 android:textSize="20sp"
 
-                android:text="Tue" />
+                android:text="@string/tue" />
 
             <TextView
                 android:id="@+id/line_3_day"
@@ -81,7 +81,7 @@
 
                 android:textSize="20sp"
 
-                android:text="Wed" />
+                android:text="@string/wed" />
 
             <TextView
                 android:id="@+id/line_4_day"
@@ -100,7 +100,7 @@
 
                 android:textSize="20sp"
 
-                android:text="Thu" />
+                android:text="@string/thu" />
 
             <TextView
                 android:id="@+id/line_5_day"
@@ -119,7 +119,7 @@
 
                 android:textSize="20sp"
 
-                android:text="Fri" />
+                android:text="@string/fri" />
 
             <TextView
                 android:id="@+id/line_6_day"
@@ -138,7 +138,7 @@
 
                 android:textSize="20sp"
 
-                android:text="Sat" />
+                android:text="@string/sat" />
 
             <TextView
                 android:id="@+id/line_7_day"
@@ -157,7 +157,7 @@
 
                 android:textSize="20sp"
 
-                android:text="Sun" />
+                android:text="@string/sun" />
 
             <TextView
                 android:id="@+id/line_8_day"
@@ -372,7 +372,7 @@
 
                     android:textSize="18sp"
 
-                    android:text="Sunny" />
+                    android:text="@string/sunny" />
 
                 <TextView
                     android:id="@+id/line_1_2_description"
@@ -415,7 +415,7 @@
 
                     android:textSize="18sp"
 
-                    android:text="Little cloudy" />
+                    android:text="@string/little_cloudy" />
 
                 <TextView
                     android:id="@+id/line_2_2_description"
@@ -458,7 +458,7 @@
 
                     android:textSize="18sp"
 
-                    android:text="Mostly cloudy" />
+                    android:text="@string/mostly_cloudy" />
 
                 <TextView
                     android:id="@+id/line_3_2_description"
@@ -501,7 +501,7 @@
 
                     android:textSize="18sp"
 
-                    android:text="Cloudy" />
+                    android:text="@string/cloudy" />
 
                 <TextView
                     android:id="@+id/line_4_2_description"
@@ -630,7 +630,7 @@
 
                     android:textSize="18sp"
 
-                    android:text="Thunderstorms" />
+                    android:text="@string/thunderstorms" />
 
                 <TextView
                     android:id="@+id/line_7_2_description"
@@ -673,7 +673,7 @@
 
                     android:textSize="18sp"
 
-                    android:text="Rain" />
+                    android:text="@string/rain" />
 
                 <TextView
                     android:id="@+id/line_8_2_description"
@@ -716,7 +716,7 @@
 
                     android:textSize="18sp"
 
-                    android:text="Heavy rain" />
+                    android:text="@string/heavy_rain" />
 
                 <TextView
                     android:id="@+id/line_9_2_description"
@@ -759,7 +759,7 @@
 
                     android:textSize="18sp"
 
-                    android:text="Showers" />
+                    android:text="@string/showers" />
 
                 <TextView
                     android:id="@+id/line_10_2_description"
